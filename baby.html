@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <link rel="stylesheet" href="baby.css">
+ 
+</head>
+<body>
+  <header>
+<h1><img src="babybloom logo.png" height="130px" alt="" srcset=""></h1>
+     
+      <nav>
+          <ul>
+              <li><a href="#">Início</a></li>
+              <li><a href="#bouquets">Buquês</a></li>
+              <li><a href="#arranjos">Arranjos</a></li>
+              <li><a href="#plantas">Plantas Ornamentais</a></li>
+              <li><a href="#contato">Contato</a></li>
+          </ul> <br>
+          <div class="search-bar">
+              <input type="text" placeholder="Buscar...">
+              <button>🔍</button>
+          </div>
+      </nav>
+  </header>
+  
+
+  <nav>
+    <button onclick="showTab('perfil')">Cadastro/Perfil</button>
+    <button onclick="showTab('gestacao')">Linha do Tempo</button>
+    <button onclick="showTab('caderneta')">Caderneta do Bebê</button>
+
+    <button onclick="showTab('farmacia')">Farmácia</button>
+  
+    <button onclick="showTab('agenda')">Agenda</button>
+  
+ 
+    <button onclick="showTab('videos')">Vídeoaulas</button>
+    <button onclick="showTab('cuidados')">Cuidados do Bebê</button>
+    <button onclick="showTab('emergencia')">Emergência</button>
+  </nav>
+
+  <section>
+    <div id="perfil" class="tab-content active">
+      <h2>Cadastro e Perfil da Mãe</h2>
+      <p>Nome, idade gestacional, data do parto e personalização da jornada.</p>
+    </div>
+    <div id="gestacao" class="tab-content">
+      <h2>Linha do Tempo da Gestação</h2>
+      <p>Informações e dicas semanais sobre a gestação.</p>
+    </div>
+    <div id="caderneta" class="tab-content">
+      <h2>Caderneta do Bebê</h2>
+      <p>Registro de consultas, vacinas e desenvolvimento até os 3 anos.</p>
+    </div>
+   
+    <div id="farmacia" class="tab-content">
+      <h2>Farmácia Integrada</h2>
+      <p>Compra de fraldas, pomadas, vitaminas e muito mais com entrega.</p>
+    </div>
+    <div id="notificacoes" class="tab-content">
+      <h2>Notificações e Lembretes</h2>
+      <p>Alertas de vacinas, consultas e dicas da fase atual.</p>
+    </div>
+    <div id="diario" class="tab-content">
+      <h2>Diário da Mãe</h2>
+      <p>Registre emoções, dúvidas, conquistas e receba sugestões personalizadas.</p>
+    </div>
+    <div id="agenda" class="tab-content">
+      <h2>Agenda Integrada</h2>
+      <p>Consultas da mãe e do bebê com lembretes automáticos.</p>
+    </div>
+    <div id="comunidade" class="tab-content">
+      <h2>Comunidade de Mães</h2>
+      <p>Fórum moderado com troca de experiências e apoio entre mães.</p>
+    </div>
+
+    <div id="videos" class="tab-content">
+      <h2>Vídeoaulas com Especialistas</h2>
+      <p>Lives e vídeos educativos com profissionais da saúde materno-infantil.</p>
+    </div>
+    <div id="cuidados" class="tab-content">
+      <h2>Central de Cuidados do Bebê</h2>
+      <p>Registro de alimentação, sono e trocas, com gráficos simples.</p>
+    </div>
+    <div id="emergencia" class="tab-content">
+      <h2>Modo Emergência</h2>
+      <p>Informações de primeiros socorros e contatos de emergência.</p>
+    </div>
+  </section>
+
+  <script>
+    function showTab(tabId) {
+      document.querySelectorAll('.tab-content').forEach(tab => {
+        tab.classList.remove('active');
+      });
+      document.getElementById(tabId).classList.add('active');
+    }
+  </script>
+</body>
+</html>
+
